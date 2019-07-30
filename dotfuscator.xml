@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v1.2.dtd">
+<dotfuscator version="1.2">
+  <!--This is application generated code. Do not edit manually.-->
+  <trigger>
+    <filelist>
+      <file dir="D:\Documents\Visual Studio Projects\VSPcmd\bin\Release\" name="VSPcmd.exe" />
+      <file dir="D:\Documents\Visual Studio Projects\VSPlus\bin\Release\" name="VSPlus.exe" />
+    </filelist>
+  </trigger>
+  <output>
+    <file dir="D:\VSPlus.release" />
+  </output>
+  <renaming>
+    <option>disable</option>
+    <excludelist>
+      <type name="VSPlus.VMState" />
+    </excludelist>
+  </renaming>
+  <controlflow level="high" />
+  <stringencrypt />
+</dotfuscator>

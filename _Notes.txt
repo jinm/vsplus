@@ -1,0 +1,66 @@
+To Release a new build
+0. Update version number in About Window and 2 AssemblyInfo.cs
+1. Build it in Release mode
+2. Create a release folder "VSPlus vXX.XX"
+3. Copy VSPlus and VSPCmd folders to the release folder.
+4. Rename VSPlus and VSPCmd in the release folder to VSPlus.src and VSPCmd.src
+5. Create a VSPlus folder in the release folder
+6. Copy necessary DLLs and config.xml to this folder.
+7. Copy old DotFuscator configuration file and update it 
+7. Run DotFuscator to process incoming files from *.src folder. Output to VSPlus folder.
+8. Run ildasm to make sure DotFuscator works.
+9. Run VSPlus and VSPCmd to make sure it still works.
+10. Clean config.xml and ZIP VSPlus folder.
+11. Upload to the website
+12. Download version.xml from website; Update Version history, Upload current version file on the website.
+13. Anounce to the users.
+14. Backup.
+
+
+
+* If website moved, make sure to update the Update path in the Main.cs
+
+* Private varible: _VaribleName 
+* Public varible: VaribleName
+
+// Open File Dialog
+			ofdMain.Filter = "VHD files (*.vhd)|*.vhd";
+			if(ofdMain.ShowDialog() == DialogResult.OK)
+			{
+				//string VDDFile = txtVDDFilePath.Text;
+
+				if( ofdMain.FileName != "") 
+				{
+					// Insert code to read the stream here.
+					txtVHDFilePath.Text = ofdMain.FileName;
+				}
+			}
+
+
+// foreach ( Object vdvd in (IEnumerable)myVS.HostInfo.DVDDrives) 
+
+
+* DialogResult
+	DialogResult result;
+	result = MessageBox.Show("Remove VM " + tabMain.SelectedTab.Text + " from VMPlus?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+	if (result == DialogResult.Yes) 
+	{
+
+	}
+
+* Reference about X509 Certificate: 						
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dncapi/html/encryptdecrypt2a.asp
+
+* Get VM from myVS.FindVirtualMachine();
+	VMVirtualMachine vm = Utility.getVM( ServerAddress, ServerDisplayName);
+	if ( vm!=null) 
+	{
+		Process.Start( Path.GetDirectoryName(vm.File) );
+	}
+
+
+* DTD in C#
+http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q307379
+
+* .BMP file structure
+http://www.fortunecity.com/skyscraper/windows/364/bmpffrmt.html

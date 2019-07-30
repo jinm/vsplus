@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSPlus", "VSPlus.csproj", "{57680875-C044-4A54-B780-348829904C5D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSPcmd", "..\VSPcmd\VSPcmd.csproj", "{26523806-2F3C-4023-AF2E-49B7939D398D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{57680875-C044-4A54-B780-348829904C5D}.Debug.ActiveCfg = Debug|.NET
+		{57680875-C044-4A54-B780-348829904C5D}.Debug.Build.0 = Debug|.NET
+		{57680875-C044-4A54-B780-348829904C5D}.Release.ActiveCfg = Release|.NET
+		{57680875-C044-4A54-B780-348829904C5D}.Release.Build.0 = Release|.NET
+		{26523806-2F3C-4023-AF2E-49B7939D398D}.Debug.ActiveCfg = Debug|.NET
+		{26523806-2F3C-4023-AF2E-49B7939D398D}.Debug.Build.0 = Debug|.NET
+		{26523806-2F3C-4023-AF2E-49B7939D398D}.Release.ActiveCfg = Release|.NET
+		{26523806-2F3C-4023-AF2E-49B7939D398D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

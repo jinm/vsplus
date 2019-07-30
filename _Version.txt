@@ -1,0 +1,107 @@
+
+
+* Working with system schedule to backup
+* Multiple snapshot
+* Delta function to keep changes
+
+* Security level on controlling every VM
+* Encryption VM
+* Scripting on VM
+* Support different languages
+* Installation shell
+* VMC/VNC editor
+* VN chart or something
+
+* Change SSID
+1.0.19	05/06/2005	Fix: An unhandled error when connects to VS. (Thanks
+					Fix
+
+
+1.0.18	3/02/2005	New: Locate vmrc.exe from the default installation path on C and D drive automatically. User does not copy vmrc.exe manually.
+					New: vspcmd.exe exits with ERRORLEVEL code. (Thanks David Blasisdell)
+						 ERRORLEVEL Code				Meaning
+						 0							No error.
+						 1							Cannot connect the virtual server
+						 2							Invalid parameter or virtual machine not found
+						 3							Unable to turn on the specified virtual machine
+						 4							Unable to turn off the specified virtual machine
+						 5							Unable to pause the specified virtual machine
+					     6							Unable to restore the specified virtual machine
+						 7							Unable to save the specified virtual machine
+						 8							Unable to reset the specified virtual machine;
+						 9							Unable to shutdown Guest OS in the specified virtual machine
+				 	   255							Invalid command		
+					Fix: vspcmd.exe exits when the given command is finished. 
+					Fix: An unhandled error when checking Virtual Server view. (Thanks Roger Bavaud)
+					Fix: Minor errors and improvements.
+
+
+1.0.17	09/14/2004	New: A Progress indicator when performing an action on VM
+					New: Support Microsoft Virtual Server 2005, version 1.1.465
+					Fix: Minor errors and improvements.
+
+1.0.16	08/13/2004	New: Duplicate current VM.
+					New: Remove from VS in the VM menu
+					New: Add a VM View from a VS view.
+					New: A shortcut to attach an ISO file.
+					New: Perform actions on all VMs of the current VS.
+					Fix: Unable to add/remove security entries. (Thanks Tony Donno)
+					Fix: Multiple exceptions when there is no VM in a VS.
+					Fix: Unable to add an existing Virtual Network configuration
+					Fix: Exception when the main window is minimized. (Thanks Jonathan Maltz)
+					Fix: Minor errors and improvements.
+
+1.0.12	08/08/2004	New: A Virtual Server view
+					New: Improved window to add VM/VS
+					Fix: Unable to access scripts in VS and VM.
+					Fix: More accurate CPU Usage chart
+					Fix: Unable to use UNDO disk
+					Fix: Unable to save VM state
+					Fix: May not be able to access virtual server after the main window is minimized (Thanks Jonathan Maltz)
+					Fix: Minor errors and improvements
+
+1.0.10	07/28/ 2004	Fix: May not display the CPU Usage chart. (Thanks Jonathan Maltz)
+
+1.0.9	7/28/2004	New: A Virtual Machine status page in VM property window
+					New: A new Settings Window to customize VSPlus.
+					New: A link to Virtual Server properties in VM Property window
+					Fix: May not be able to load correct default configuration file. (Thanks Jonathan Maltz)
+					Fix: Unable to change DVD/CDROM drive properties when a VM is running. (Thanks Jonathan Maltz)
+					Fix: Minor errors and improvements
+
+1.0.8	7/22/2004	New: Load and Save Configuration files.
+					New: Display VMRC Connection status at Status bar 
+					New: Improved Event view.
+					New: Event view for current Virtual Machine in Property window
+					New: More friendly message when error occurs. (Thanks Brendon McCarthy)
+					New: Improved view for Adding VM window
+					New: A new menu item for browsing current VM folder.
+					New: Optimized codes run faster
+					New: View VM status in Virtual Server Property window
+					New: Check update automatically on exiting
+					Fix: May raise error when Pause/Resume a VM.
+					Fix: May display incorrect system resource allocation.
+					Fix: May display incorrect virtual harddisk drive information
+					Fix: May display incorrect virtual DVD/CDROM drive information
+					Fix: Minor errors and improvements
+
+1.0.6	7/15/2004	Fix: username and password issue in VM properties page. 
+					Fix: VMRC does not display after resetting. 
+					Fix: Unable to enable undo disk
+					Fix: VM thumbnail displayed in a wrong order.
+					Fix: Several comboboxes allow invalid inputs.
+					Fix: Unable to read key length of the public key.
+					Fix: Unable to retrive username and password.
+					Fix: Display VMRC SSL Certificate incorrectly.
+					Fix: Unable to upload SSL certificate file.
+					New: More friendly prompt messages on the interface (Thanks Whitney Roberts)
+					New: Check update when the program starts and Check update function in the menu
+					New: Links to VSPlus website and forums in Help menu
+
+1.0.3	7/9/2004	Fix: incorrect version number displayed in the About Window
+					Fix: Add tooltiptext for Full Screen button. (Thanks Jonathan Maltz)
+					
+1.0.2	7/8/2004	New: Posted to VS2005 beta newsgroup. .
+					Fix: several bugs.	
+					
+1.0.0	7/7/2004	First release.

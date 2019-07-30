@@ -1,0 +1,53 @@
+
+* frmVMProperty: 
+	Reset to default setttings
+	Read file information from a remove server or disable this function.
+
+* frmMain
+	Cannot switch VMRC Viewonly mode back to false: How to play ViewOnly?
+	Display VM info somewhere
+	Too many error message if config.xml provides wrong server and display names.
+	May not mark * correctly 
+	Update VMRC status when the VM was operated outside of VSPlus.
+	Startup error when config.xml provides unknown server address.
+	Remember the SSL status of each window
+	When there is an Undo disk, save VM prompt window needs a cancel button.
+	Add hotkey to switch to full screen.
+	
+
+* frmAdd
+	Error when saving to XML if a VM just added to VS
+	Display rich information for VM
+	Remote Connection error
+
+* frmVSProperty:
+	Use PropertyGrid?
+	
+* VSPCMD
+
+-------------------------------------------------------------------------
+* Optimize code 
+	Chilkat.Xml microsoft = xml.FindNextRecord("name","Microsoft*");
+	Is it necessary to reload VM every time?
+* Add different languages
+* Add a splash window
+* Clean up unused varibles, rename if necessary
+* Move files between VS and host.
+* Nice toolbar and icon, may need $$$
+* Multi-threading
+
+
+
+
+Bugs Report ------------------------------------------------------------
+myVS.VMRCAuthenticator.Name Read-only
+Cannot find VMRC.State and VMRCState
+Why Resume/Pause has no return code?
+
+
+Question:---------------------------------------------------------------
+How to get VMAdditions version without exception? What's the initial value of VMAddition?
+If VM is undoable, how can I know if the merge or discard action is necessary or not?
+ 
+
+
